@@ -21,8 +21,12 @@ class MainActivity : AppCompatActivity() {
             this,
             airplaneModeReceiver,
             filter,
-            ContextCompat.RECEIVER_EXPORTED
+            ContextCompat.RECEIVER_NOT_EXPORTED
         )
+    }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        unregisterReceiver(airplaneModeReceiver)
     }
 }
