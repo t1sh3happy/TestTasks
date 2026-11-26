@@ -5,13 +5,13 @@ plugins {
 android {
     namespace = "ru.emkucherenko.testtasks"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
     }
 
     defaultConfig {
-        applicationId = "ru.emkucherenko.testtasks"
+        applicationId = "ru.emkucherenko.testtasks.task4"
         minSdk = 34
         targetSdk = 36
         versionCode = 1
